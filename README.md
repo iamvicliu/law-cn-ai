@@ -6,32 +6,35 @@
 
 这个项目从 `pages` 目录中获取所有的 `.mdx` 文件，并将其处理成自定义上下文，以在[OpenAI 文本自动补全](https://platform.openai.com/docs/guides/completion)提示中使用。
 
-## 赞助商
+## 更多好玩
 
 <table>
   <tr>
-    <td>
+    <td width="300px" align="center">
       <a href="https://magickpen.com/?ref=lawcnai" target="_blank">
-        <img alt="MagickPen" src="public/MagickPen.png" height="32px;" />
+        <img alt="MagickPen" src="public/MagickPen.png" height="30px" />
+        <p>智能写作助手</p>
       </a>
     </td>
-    <td>
+   <td width="300px" align="center">
       <a href="https://www.teach-anything.com/?ref=lawcnai" target="_blank">
-        <img alt="TeachAnything" src="public/TeachAnything.png" height="32px;" />
-      </a>
-    </td>
-    <td>
-      <a href="https://openl.io/?ref=lawcnai" target="_blank">
-        <img alt="OpenL" src="public/OpenL.png" height="32px;" />
+        <img alt="TeachAnything" src="public/TeachAnything.png" height="30px" />
+        <p>AI 百科全书</p>
       </a>
     </td>
   </tr>
   <tr>
-    <td>
-      <a href="https://afdian.net/a/lvwzhen/plan" target="_blank"> ❤️ 请赞助我们</a>
+   <td width="300px" align="center">
+      <a href="https://openl.io/?ref=lawcnai" target="_blank">
+        <img alt="OpenL" src="public/OpenL.png" height="30px" />
+        <p>AI 翻译专家</p>
+      </a>
     </td>
-    <td></td>
-    <td></td>
+   <td width="300px" align="center">
+      <a href="https://afdian.net/a/lvwzhen/plan" target="_blank">
+        <p>❤️ 打赏赞助 ❤️ </p>
+      </a>
+    </td>
   </tr>
 </table>
 
@@ -40,7 +43,7 @@
 
 部署此starter到Vercel。Supabase集成将自动设置所需的环境变量并配置您的[数据库概要](./supabase/migrations/20230406025118_init.sql)。您只需要设置 `OPENAI_KEY`，然后就可以开始了！
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20OpenAI%20Doc%20Search%20Starter&demo-description=Template%20for%20building%20your%20own%20custom%20ChatGPT%20style%20doc%20search%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=nextjs-openai-doc-search-starter&repository-url=https%3A%2F%2Fgithub.com%2Fsupabase-community%2Fnextjs-openai-doc-search%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=nextjs-open-ai-doc-search)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20Law%20CN%20AI&demo-description=Template%20for%20building%20your%20own%20law%20cn%20ai%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=law-cn-ai&repository-url=https%3A%2F%2Fgithub.com%2Flvwzhen%2Flaw-cn-ai%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=law-cn-ai)
 
 ## 技术细节
 
@@ -111,7 +114,7 @@ sequenceDiagram
 确保已安装并在本地运行 Docker。然后运行
 
 ```bash
-supabase start
+npx supabase start
 ```
 
 ### 启动 Next.js 应用程序
@@ -126,7 +129,7 @@ pnpm dev
 
 仅需将此 starter 部署到 Vercel。Supabase集成将自动设置所需的环境变量并配置您的[数据库Schema](./supabase/migrations/20230406025118_init.sql)。您只需设置 `OPENAI_KEY` 并开始使用即可！
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20OpenAI%20Doc%20Search%20Starter&demo-description=Template%20for%20building%20your%20own%20custom%20ChatGPT%20style%20doc%20search%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=nextjs-openai-doc-search-starter&repository-url=https%3A%2F%2Fgithub.com%2Fsupabase-community%2Fnextjs-openai-doc-search%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=nextjs-open-ai-doc-search)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20Law%20CN%20AI&demo-description=Template%20for%20building%20your%20own%20law%20cn%20ai%20powered%20by%20Next.js%2C%20OpenAI%2C%20and%20Supabase.&demo-url=https%3A%2F%2Fsupabase.com%2Fdocs&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1OntM6THNEUvlUsYy6Bjmf%2F475e39dbc84779538c8ed47c63a37e0e%2Fnextjs_openai_doc_search_og.png&project-name=Next.js%20OpenAI%20Doc%20Search%20Starter&repository-name=law-cn-ai&repository-url=https%3A%2F%2Fgithub.com%2Flvwzhen%2Flaw-cn-ai%2F&from=github&integration-ids=oac_jUduyjQgOyzev1fjrW83NYOv&env=OPENAI_KEY&envDescription=Get%20your%20OpenAI%20API%20key%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&teamCreateStatus=hidden&external-id=law-cn-ai)
 
 ## 了解更多
 
@@ -137,3 +140,10 @@ pnpm dev
 [![Video: How I Built Supabase's OpenAI Doc Search](https://img.youtube.com/vi/Yhtjd7yGGGA/0.jpg)](https://www.youtube.com/watch?v=Yhtjd7yGGGA)
 
     此文件由 ChatGPT 提供翻译
+    
+   
+   
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lvwzhen/law-cn-ai&type=Date)](https://star-history.com/#lvwzhen/law-cn-ai&Date)
+
